@@ -1,91 +1,85 @@
-1. 项目概述
-1.1 项目背景
-LotteryToken 是一个基于区块链的彩票代币系统，旨在通过去中心化的方式实现公平、公正、公开的彩票机制。每个代币都具有唯一的编码，用户可以通过持有代币参与抽奖，赢取丰厚的奖励。
-1.2 项目愿景
-我们的愿景是创建一个透明、可信的彩票系统，利用区块链技术的不可篡改性和去中心化特性，确保每个用户都能公平参与，并获得应得的奖励。
-1.3 项目目标
-提供一个公平、公正、公开的彩票机制。
-确保每个代币具有唯一的编码，增强代币的稀缺性和价值。
-利用 Chainlink VRF 确保随机数的公平性。
-通过开源代码和透明的中奖历史，建立用户信任。
+1. Project Overview
+1.1 Project Background
+LotteryToken is a blockchain-based lottery token system designed to implement a fair, just, and open lottery mechanism through decentralization. Each token has a unique code, and users can participate in the lottery by holding tokens to win substantial rewards.
 
-2. 核心功能
-2.1 代币铸造与唯一编码
-每个代币在铸造时都会分配一个唯一的编码，确保每个代币的唯一性。
-代币的唯一编码可以通过区块链浏览器或前端界面查询。
-2.2 中奖机制
-使用 Chainlink VRF 生成安全的随机数，确保中奖结果的公平性。
-每次抽奖会随机选择一个代币编码，并将 代币总收入的 1% 作为奖励发送给中奖者。
-2.3 中奖历史记录
-每次抽奖的中奖者和中奖金额都会被记录在区块链上，用户可以随时查询历史中奖记录。
-2.4 代币的不可转让性
-为了确保彩票机制的公平性，代币不可转让。每个代币的所有者只能是自己。
+1.2 Project Vision
+Our vision is to create a transparent and trustworthy lottery system by leveraging the immutability and decentralization features of blockchain technology, ensuring that every user can participate fairly and receive their deserved rewards.
 
-3. 技术架构
-3.1 智能合约
-使用 Solidity 编写智能合约，部署在以太坊或 Binance Smart Chain 上。
-合约包括代币铸造、唯一编码分配、中奖机制等功能。
+1.3 Project Objectives
+Provide a fair, just, and open lottery mechanism.
+Ensure each token has a unique code, enhancing the scarcity and value of the tokens.
+Utilize Chainlink VRF to ensure the fairness of random numbers.
+Build user trust through open-source code and transparent winning history.
+2. Core Features
+2.1 Token Minting and Unique Coding
+Each token is assigned a unique code upon minting, ensuring the uniqueness of each token.
+The unique code of the token can be queried via blockchain explorers or the frontend interface.
+2.2 Winning Mechanism
+Use Chainlink VRF to generate secure random numbers, ensuring the fairness of the winning results.
+Each lottery randomly selects a token code, and 1% of the total token income is sent as a reward to the winner.
+2.3 Winning History Record
+The winner and the winning amount of each lottery are recorded on the blockchain, and users can query the historical winning records at any time.
+2.4 Non-transferability of Tokens
+To ensure the fairness of the lottery mechanism, tokens are non-transferable. Each token owner can only be the user themselves.
+3. Technical Architecture
+3.1 Smart Contracts
+Smart contracts are written in Solidity and deployed on Ethereum or Binance Smart Chain.
+The contracts include functions such as token minting, unique code allocation, and winning mechanisms.
 3.2 Chainlink VRF
-使用 Chainlink VRF 生成安全的随机数，确保中奖结果的公平性。
-Chainlink VRF 是一个去中心化的随机数生成服务，能够提供可验证的随机数。
-3.3 前端界面
-开发一个简单易用的前端界面，展示代币的唯一编码、中奖历史和当前中奖池等信息。
-前端界面支持多语言，方便全球用户使用。
-3.4 开源与透明
-所有智能合约代码将开源，并上传到 GitHub 和 Etherscan 进行验证。
-用户可以随时查看合约的源代码和中奖历史记录。
-
-4. 公平性与透明性
-4.1 随机数生成
-使用 Chainlink VRF 生成随机数，确保随机性不受任何单一实体控制。
-随机数生成过程可验证，用户可以确认中奖结果的公平性。
-4.2 中奖历史记录
-每次抽奖的中奖者和中奖金额都会被记录在区块链上，用户可以随时查询历史中奖记录。
-中奖历史记录公开透明，任何人都可以验证中奖结果的正确性。
-4.3 开源代码
-所有智能合约代码将开源，并上传到 GitHub 和 Etherscan 进行验证。
-用户可以查看和验证合约的功能和安全性。
-
-5. 代币经济模型
-5.1 代币总量
-代币总供应量为 10亿个。
-每个代币具有唯一的编码，确保代币的稀缺性和价值。
-5.2 中奖奖励
-每次抽奖会将 代币总收入的 1% 作为奖励发送给中奖者。
-中奖奖励通过智能合约自动分配，确保公平性和透明性。
-5.3 代币用途
-代币的主要用途是参与抽奖，赢取奖励。
-代币不可转让，确保彩票机制的公平性。
-
-6. 路线图
-6.1 阶段 1：项目启动与开发
-完成智能合约的开发和测试。
-集成 Chainlink VRF，确保随机数的公平性。
-开发前端界面，支持代币查询和中奖历史记录。
-6.2 阶段 2：测试与部署
-在测试网络上部署合约，进行全面测试。
-完成代码审计，确保合约的安全性。
-将合约部署到主网，并上线前端界面。
-6.3 阶段 3：社区推广与合作
-在社交媒体上建立社区，吸引用户参与项目。
-与其他区块链项目或交易所合作，推广 LotteryToken。
-定期发布项目进展和财务报告，保持透明度。
-
-7. 社区与合作伙伴
-7.1 社区建设
-在 Twitter、Telegram、Discord 等平台上建立社区，吸引用户参与项目。
-定期发布更新和抽奖活动，增加用户粘性。
-7.2 合作伙伴
-与 Chainlink 合作，集成 VRF 服务，确保随机数的公平性。
-与其他区块链项目或交易所合作，推广 LotteryToken。
-
-8. 风险与免责声明
-8.1 风险提示
-区块链技术存在一定的技术风险，用户需谨慎参与。
-代币价格可能受到市场波动的影响，用户需自行承担投资风险。
-8.2 免责声明
-LotteryToken 团队不对用户的投资损失承担任何责任。
-用户需自行评估项目的风险和收益，谨慎参与。
-
-结语
-LotteryToken 是一个基于区块链的彩票代币系统，旨在通过去中心化的方式实现公平、公正、公开的彩票机制。我们相信，通过开源代码、透明的随机数生成和中奖历史记录，LotteryToken 将成为一个值得信赖的彩票平台。
+Chainlink VRF is used to generate secure random numbers, ensuring the fairness of the winning results.
+Chainlink VRF is a decentralized random number generation service that provides verifiable randomness.
+3.3 Frontend Interface
+Develop a user-friendly frontend interface to display the unique code of tokens, winning history, and current prize pool information.
+The frontend interface supports multiple languages, making it convenient for global users.
+3.4 Open Source and Transparency
+All smart contract codes will be open-sourced and uploaded to GitHub and Etherscan for verification.
+Users can view and verify the source code and winning history records at any time.
+4. Fairness and Transparency
+4.1 Random Number Generation
+Use Chainlink VRF to generate random numbers, ensuring that randomness is not controlled by any single entity.
+The random number generation process is verifiable, allowing users to confirm the fairness of the winning results.
+4.2 Winning History Record
+The winner and the winning amount of each lottery are recorded on the blockchain, and users can query the historical winning records at any time.
+The winning history is publicly transparent, and anyone can verify the correctness of the winning results.
+4.3 Open Source Code
+All smart contract codes will be open-sourced and uploaded to GitHub and Etherscan for verification.
+Users can view and verify the functionality and security of the contracts.
+5. Token Economic Model
+5.1 Total Token Supply
+The total supply of tokens is 1 billion.
+Each token has a unique code, ensuring the scarcity and value of the tokens.
+5.2 Winning Rewards
+Each lottery will send 1% of the total token income as a reward to the winner.
+Winning rewards are automatically distributed through smart contracts, ensuring fairness and transparency.
+5.3 Token Usage
+The primary use of tokens is to participate in lotteries and win rewards.
+Tokens are non-transferable, ensuring the fairness of the lottery mechanism.
+6. Roadmap
+6.1 Phase 1: Project Launch and Development
+Complete the development and testing of smart contracts.
+Integrate Chainlink VRF to ensure the fairness of random numbers.
+Develop the frontend interface to support token queries and winning history records.
+6.2 Phase 2: Testing and Deployment
+Deploy the contracts on the test network for comprehensive testing.
+Complete code audits to ensure the security of the contracts.
+Deploy the contracts on the mainnet and launch the frontend interface.
+6.3 Phase 3: Community Promotion and Collaboration
+Build a community on social media to attract users to participate in the project.
+Collaborate with other blockchain projects or exchanges to promote LotteryToken.
+Regularly release project progress and financial reports to maintain transparency.
+7. Community and Partnerships
+7.1 Community Building
+Establish communities on platforms such as Twitter, Telegram, and Discord to attract users to participate in the project.
+Regularly release updates and lottery activities to increase user engagement.
+7.2 Partnerships
+Collaborate with Chainlink to integrate VRF services, ensuring the fairness of random numbers.
+Collaborate with other blockchain projects or exchanges to promote LotteryToken.
+8. Risks and Disclaimer
+8.1 Risk Warning
+Blockchain technology carries certain technical risks, and users need to participate cautiously.
+Token prices may be affected by market fluctuations, and users need to bear investment risks themselves.
+8.2 Disclaimer
+The LotteryToken team is not responsible for any investment losses incurred by users.
+Users need to evaluate the risks and benefits of the project themselves and participate cautiously.
+Conclusion
+LotteryToken is a blockchain-based lottery token system designed to implement a fair, just, and open lottery mechanism through decentralization. We believe that through open-source code, transparent random number generation, and winning history records, LotteryToken will become a trustworthy lottery platform.
